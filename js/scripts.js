@@ -13,10 +13,14 @@ $(document).ready(function() {
     var numberOfColumns = Math.sqrt(numberOfLetters);
     var numOfColumnsRounded = Math.floor(numberOfColumns);
     alert(numOfColumnsRounded);
-    //$('tr').append('a');
+    //;
 
     //determine number of rows:
     var numberOfRows = Math.ceil(numberOfLetters/numOfColumnsRounded);
     alert(numberOfRows);
+
+    for(index = 0; index<=numberOfColumns; index++) {
+      $('tr').append(newSentenceArray[index]);
+    }
   });
 });
